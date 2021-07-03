@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.IO;
+using System.Speech.Synthesis;
 
 namespace Client
 {
@@ -42,6 +43,16 @@ namespace Client
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnListen_Click(object sender, EventArgs e)
+        {
+            SpeechSynthesizer speechSynthesizerObj;
+            if (rtbInput.Text != "")
+            {
+                speechSynthesizerObj = new SpeechSynthesizer();
+                speechSynthesizerObj.SpeakAsync(rtbInput.Text);
+            }
         }
     }
 }

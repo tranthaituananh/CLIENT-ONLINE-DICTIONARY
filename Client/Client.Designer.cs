@@ -43,15 +43,16 @@ namespace Client
             this.wbOutput = new System.Windows.Forms.WebBrowser();
             this.label5 = new System.Windows.Forms.Label();
             this.lvSearchHistory = new System.Windows.Forms.ListView();
+            this.btnListen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnExport
             // 
             this.btnExport.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExport.Location = new System.Drawing.Point(28, 386);
+            this.btnExport.Location = new System.Drawing.Point(28, 495);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(278, 60);
+            this.btnExport.Size = new System.Drawing.Size(275, 60);
             this.btnExport.TabIndex = 4;
             this.btnExport.Text = "Export to Excel";
             this.btnExport.UseVisualStyleBackColor = false;
@@ -61,9 +62,9 @@ namespace Client
             // 
             this.btnConvert.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConvert.Location = new System.Drawing.Point(497, 259);
+            this.btnConvert.Location = new System.Drawing.Point(467, 284);
             this.btnConvert.Name = "btnConvert";
-            this.btnConvert.Size = new System.Drawing.Size(87, 60);
+            this.btnConvert.Size = new System.Drawing.Size(127, 60);
             this.btnConvert.TabIndex = 3;
             this.btnConvert.Text = "→";
             this.btnConvert.UseVisualStyleBackColor = false;
@@ -84,7 +85,7 @@ namespace Client
             this.rtbInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbInput.Location = new System.Drawing.Point(28, 227);
             this.rtbInput.Name = "rtbInput";
-            this.rtbInput.Size = new System.Drawing.Size(453, 126);
+            this.rtbInput.Size = new System.Drawing.Size(419, 241);
             this.rtbInput.TabIndex = 2;
             this.rtbInput.Text = "";
             // 
@@ -102,9 +103,9 @@ namespace Client
             // 
             this.btnExit.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(333, 386);
+            this.btnExit.Location = new System.Drawing.Point(328, 495);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(148, 60);
+            this.btnExit.Size = new System.Drawing.Size(119, 60);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -154,18 +155,18 @@ namespace Client
             // 
             // wbOutput
             // 
-            this.wbOutput.Location = new System.Drawing.Point(600, 227);
+            this.wbOutput.Location = new System.Drawing.Point(618, 227);
             this.wbOutput.Margin = new System.Windows.Forms.Padding(4);
             this.wbOutput.MinimumSize = new System.Drawing.Size(27, 25);
             this.wbOutput.Name = "wbOutput";
-            this.wbOutput.Size = new System.Drawing.Size(441, 337);
+            this.wbOutput.Size = new System.Drawing.Size(426, 337);
             this.wbOutput.TabIndex = 38;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1094, 157);
+            this.label5.Location = new System.Drawing.Point(1106, 157);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(256, 44);
             this.label5.TabIndex = 40;
@@ -178,20 +179,33 @@ namespace Client
             this.lvSearchHistory.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvSearchHistory.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.lvSearchHistory.HideSelection = false;
-            this.lvSearchHistory.Location = new System.Drawing.Point(1063, 227);
+            this.lvSearchHistory.Location = new System.Drawing.Point(1074, 227);
             this.lvSearchHistory.Margin = new System.Windows.Forms.Padding(6, 9, 6, 9);
             this.lvSearchHistory.Name = "lvSearchHistory";
-            this.lvSearchHistory.Size = new System.Drawing.Size(333, 337);
+            this.lvSearchHistory.Size = new System.Drawing.Size(322, 337);
             this.lvSearchHistory.TabIndex = 41;
             this.lvSearchHistory.UseCompatibleStateImageBehavior = false;
             this.lvSearchHistory.View = System.Windows.Forms.View.List;
+            // 
+            // btnListen
+            // 
+            this.btnListen.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnListen.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListen.Location = new System.Drawing.Point(467, 367);
+            this.btnListen.Name = "btnListen";
+            this.btnListen.Size = new System.Drawing.Size(127, 60);
+            this.btnListen.TabIndex = 42;
+            this.btnListen.Text = "Listen";
+            this.btnListen.UseVisualStyleBackColor = false;
+            this.btnListen.Click += new System.EventHandler(this.btnListen_Click);
             // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1433, 600);
+            this.ClientSize = new System.Drawing.Size(1433, 597);
+            this.Controls.Add(this.btnListen);
             this.Controls.Add(this.lvSearchHistory);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.wbOutput);
@@ -229,6 +243,7 @@ namespace Client
         private System.Windows.Forms.WebBrowser wbOutput;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListView lvSearchHistory;
+        private System.Windows.Forms.Button btnListen;
     }
 }
 
