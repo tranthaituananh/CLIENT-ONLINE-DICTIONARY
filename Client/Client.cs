@@ -13,6 +13,7 @@ namespace Client
         public Client()
         {
             InitializeComponent();
+            pnUpdate.Hide();
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -53,6 +54,60 @@ namespace Client
                 speechSynthesizerObj = new SpeechSynthesizer();
                 speechSynthesizerObj.SpeakAsync(rtbInput.Text);
             }
+        }
+
+        private void btnUpdateDatabase_Click(object sender, EventArgs e)
+        {
+            pnUpdate.Show();
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string word = rtbWord.Text.ToString() + ":" + rtbMean.Text.ToString();
+                server.SendData(lvHistory, word);
+                MessageBox.Show("Add successfully !");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string word = rtbWord.Text.ToString() + "+" + rtbMean.Text.ToString();
+                server.SendData(lvHistory, word);
+                MessageBox.Show("Update successfully !");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string word = rtbWord.Text.ToString() + "-" + rtbMean.Text.ToString();
+                server.SendData(lvHistory, word);
+                MessageBox.Show("Delete successfully !");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void btnExitPanel_Click(object sender, EventArgs e)
+        {
+            pnUpdate.Hide();
+            rtbInput.Clear();
+            rtbMean.Clear();
         }
     }
 }
