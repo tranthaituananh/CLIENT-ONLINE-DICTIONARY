@@ -65,9 +65,9 @@ namespace Client
         {
             try
             {
-                string word = rtbWord.Text.ToString() + ":" + rtbMean.Text.ToString();
+                string word = rtbWord.Text.ToString() + "$" + rtbMean.Text.ToString();
                 server.SendData(lvHistory, word);
-                MessageBox.Show("Add successfully !");
+                MessageBox.Show("Insert request has been sent !");
             }
             catch (Exception ex)
             {
@@ -79,9 +79,9 @@ namespace Client
         {
             try
             {
-                string word = rtbWord.Text.ToString() + "+" + rtbMean.Text.ToString();
+                string word = rtbWord.Text.ToString() + "%" + rtbMean.Text.ToString();
                 server.SendData(lvHistory, word);
-                MessageBox.Show("Update successfully !");
+                MessageBox.Show("Update request has been sent !");
             }
             catch (Exception ex)
             {
@@ -93,9 +93,9 @@ namespace Client
         {
             try
             {
-                string word = rtbWord.Text.ToString() + "-" + rtbMean.Text.ToString();
+                string word = rtbWord.Text.ToString() + "#" + rtbMean.Text.ToString();
                 server.SendData(lvHistory, word);
-                MessageBox.Show("Delete successfully !");
+                MessageBox.Show("Delete request has been sent !");
             }
             catch (Exception ex)
             {
@@ -105,9 +105,9 @@ namespace Client
 
         private void btnExitPanel_Click(object sender, EventArgs e)
         {
-            pnUpdate.Hide();
-            rtbInput.Clear();
+            rtbWord.Clear();
             rtbMean.Clear();
+            pnUpdate.Hide();
         }
     }
 }
