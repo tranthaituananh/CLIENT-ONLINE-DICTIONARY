@@ -1,8 +1,8 @@
 # CLIENT - ONLINE DICTIONARY
 
 ## 1. Giới thiệu   
-- Đây là đồ án cuối kỳ môn Lập trình mạng căn bản (NT106)
-- Chương trình hỗ trợ Client dịch nghĩa của 1 từ tiếng Anh bất kỳ qua tiếng Việt
+Đây là đồ án cuối kỳ môn Lập trình mạng căn bản (NT106)
+Chương trình hỗ trợ Client dịch nghĩa của 1 từ tiếng Anh bất kỳ qua tiếng Việt
 
 ## 2. Mô tả tính năng  
 - Dịch nghĩa từ tiếng Anh sang tiếng Việt  
