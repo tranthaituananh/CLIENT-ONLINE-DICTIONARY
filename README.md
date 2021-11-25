@@ -1,7 +1,23 @@
-# NT106_CLIENT-NHOM_7
-Đồ án cuối kỳ môn Lập trình mạng căn bản (NT106) của UIT (Chương trình từ điển qua mạng (English - Vietnamese))
-- Client kết nối với Server qua TCP IP
-- Client gửi từ tiếng Anh mà người dùng nhập vào về Server
-- Client hiển thị kết quả nghĩa tiếng Việt mà Server phản hồi cho người dùng. Có thể xuất kết quả ra file Excel
-- Client có thể lắng nghe phát âm của từ tiếng Anh
-- Client cũng có thể thêm, xóa hoặc sửa từ 
+# CLIENT - ONLINE DICTIONARY
+
+1. Giới thiệu 
+Đây là đồ án cuối kỳ môn Lập trình mạng căn bản (NT106)
+Chương trình hỗ trợ Client dịch nghĩa của 1 từ tiếng Anh bất kỳ qua tiếng Việt
+
+2. Mô tả tính năng
+Dịch nghĩa từ tiếng Anh sang tiếng Việt
+Thêm từ mới vào database
+Chỉnh sửa từ hiện có trong database
+Xoá từ hiện có ra khỏi database
+Phát âm từ tiếng Anh được nhập vào
+Hiển thị lịch sử từ đã tra cứu
+
+3. Tác giả 
+19521219: Trần Thái Tuấn Anh
+
+19520477: Phạm Mai Dung
+
+19520600: Nguyễn Quang Huy
+
+4. Giảng viên hướng dẫn
+Th.S Trần Bá Nhiệm
