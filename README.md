@@ -15,7 +15,7 @@
 
 ## 3. Tác giả   
     GVDH: Th.S Trần Bá Nhiệm
-  
-    Trần Thái Tuấn Anh (19521219)  
-    Phạm Mai Dung (19520477)  
-    Nguyễn Quang Huy (19520600)  
+    Sinh viên thực hiện:
+    - Trần Thái Tuấn Anh (19521219)  
+    - Phạm Mai Dung (19520477)  
+    - Nguyễn Quang Huy (19520600)  
