@@ -13,10 +13,10 @@
 - Hiển thị lịch sử từ đã tra cứu  
 
 3. Tác giả   
-- Giảng viên hướng dẫn: Th.S Trần Bá Nhiệm
+- GVDH: Th.S Trần Bá Nhiệm
   
-- 19521219: Trần Thái Tuấn Anh  
+- Trần Thái Tuấn Anh (19521219)  
   
-- 19520477: Phạm Mai Dung  
+- Phạm Mai Dung (19520477)  
   
-- 19520600: Nguyễn Quang Huy  
+- Nguyễn Quang Huy (19520600)  
